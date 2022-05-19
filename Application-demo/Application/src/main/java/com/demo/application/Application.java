@@ -15,4 +15,8 @@ public class Application {
         context.getBean(Controller.class).addUser(user);
     }
 
+    public void call() {
+        System.out.println("call");
+    }
+
 }
