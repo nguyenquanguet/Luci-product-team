@@ -1,27 +1,81 @@
 package org.demo;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
-@Component
 public class Service {
 
-    @Autowired
-    private Dao<User> userDao;
+    public static class UnvalidatedCreateUserContext {
+        private String name;
+        private int age;
 
-    @Autowired
-    private User user = new User();
+        public String getName() {
+            return name;
+        }
 
-    public void save(User user) {
-        userDao.save(this.user);
-        this.user = new User();
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public int getAge() {
+            return age;
+        }
+
+        public void setAge(int age) {
+            this.age = age;
+        }
     }
 
-    public void update(User user){
-        userDao.update(this.user);
+    public static class ValidatedCreateUserContext {
+        private String name;
+        private int age;
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public int getAge() {
+            return age;
+        }
+
+        public void setAge(int age) {
+            this.age = age;
+        }
     }
 
-    public void delete(User user){
-        userDao.delete(user);
+
+    private Dao userDao;
+
+
+    public Service(Dao userDao) {
+        this.userDao = userDao;
+    }
+
+    public static class CreateUserResult{
+        private String id;
+
+        public CreateUserResult(String id) {
+            this.id = id;
+        }
+
+        public String getId() {
+            return id;
+        }
+    }
+
+    public CreateUserResult save(UnvalidatedCreateUserContext user) {
+        if(user == null){
+            return null;
+        }
+        try {
+            return new CreateUserResult(userDao.save(validate(user)));
+        }catch (Exception e){
+            return new CreateUserResult(null);
+        }
+    }
+
+    private ValidatedCreateUserContext validate(UnvalidatedCreateUserContext context) {
+        return new ValidatedCreateUserContext();
     }
 }

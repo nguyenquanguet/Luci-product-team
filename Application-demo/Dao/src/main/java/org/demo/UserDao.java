@@ -1,41 +1,16 @@
 package org.demo;
 
-import org.springframework.stereotype.Repository;
+import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.*;
-import java.util.stream.Collectors;
+public class UserDao implements Dao{
 
-@Repository
-public class UserDao implements Dao<User>{
-    private final List<User> userList = new ArrayList<>();
+    @Autowired
+    private UserDaos userDaos;
 
-    @Override
-    public Optional<User> get(int id) {
-        return Optional.ofNullable(userList.get(id));
+
+    public User save(User a){
+        User save = userDaos.save(a);
+        return save;
     }
 
-    @Override
-    public Collection<User> getAll() {
-        return userList.stream()
-                .filter(Objects::nonNull)
-                .collect(Collectors.collectingAndThen(Collectors.toList(), Collections::unmodifiableList));
-    }
-
-    @Override
-    public int save(User user) {
-        userList.add(user);
-        int index = userList.size() - 1;
-        user.setId(index);
-        return index;
-    }
-
-    @Override
-    public void update(User user) {
-        userList.set(user.getId(), user);
-    }
-
-    @Override
-    public void delete(User user) {
-        userList.set(user.getId(), null);
-    }
 }

@@ -1,16 +1,15 @@
 package org.demo;
 
-import org.springframework.stereotype.Component;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 @Entity
 @Table(name="user")
-@Component
-public class User {
+
+public class User implements Serializable {
     @Id
     private int id;
     @Column
