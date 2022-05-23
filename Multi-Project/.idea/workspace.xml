@@ -5,37 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a030922-9c79-4f9c-ab86-2b0ee3de5dd4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/Luci-product-team.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Application-demo/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Application-demo/Dao/src/main/java/org/demo/UserIml.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent/Application/src/main/java/com/example/application/ServiceConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent/Controller/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent/Controller/src/main/java/org/example/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent/Dao/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent/Dao/src/main/java/org/example/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent/Dao/src/main/java/org/example/dao/DaoImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent/Service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent/Service/src/main/java/org/example/Dao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent/Service/src/main/java/org/example/service/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Application-demo/Application/src/main/java/com/demo/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Application-demo/Application/src/main/java/com/demo/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Application-demo/Application/src/main/java/com/demo/application/ServiceConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Application-demo/Application/src/main/java/com/demo/application/ServiceConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Application-demo/Application/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Application-demo/Application/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Application-demo/Controller/src/main/java/org/demo/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Application-demo/Controller/src/main/java/org/demo/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Application-demo/Controller/target/classes/org/demo/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Application-demo/Dao/src/main/java/org/demo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Application-demo/Dao/src/main/java/org/demo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Application-demo/Dao/src/main/java/org/demo/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Application-demo/Dao/src/main/java/org/demo/UserDaos.java" beforeDir="false" afterPath="$PROJECT_DIR$/parent/Dao/src/main/java/org/example/dao/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Application-demo/Dao/target/classes/org/demo/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Application-demo/Dao/target/classes/org/demo/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Application-demo/Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Application-demo/Service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Application-demo/Service/src/main/java/org/demo/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Application-demo/Service/src/main/java/org/demo/Dao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Application-demo/Service/src/main/java/org/demo/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Application-demo/Service/src/main/java/org/demo/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Application-demo/Service/target/classes/org/demo/Dao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Application-demo/Service/target/classes/org/demo/Dao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Application-demo/Service/target/classes/org/demo/Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../file check commit.txt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent/CRUD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7cab06e-a94a-4934-907c-b62fd4ef830d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c7cab06e-a94a-4934-907c-b62fd4ef830d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent/Application/src/main/java/com/example/application/ServiceConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/parent/Application/src/main/java/com/example/application/ServiceConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent/Application/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/parent/Application/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent/Controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parent/Controller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent/Controller/src/main/java/org/example/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/parent/Controller/src/main/java/org/example/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent/Controller/target/classes/org/example/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/parent/Controller/target/classes/org/example/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent/Dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parent/Dao/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent/Dao/src/main/java/org/example/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/parent/Dao/src/main/java/org/example/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent/Dao/src/main/java/org/example/dao/DaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/parent/Dao/src/main/java/org/example/dao/DaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent/Dao/src/main/java/org/example/dao/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/parent/Dao/src/main/java/org/example/dao/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent/Dao/target/classes/org/example/Entity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent/Dao/target/classes/org/example/dao/DaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/parent/Dao/target/classes/org/example/dao/DaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent/Dao/target/classes/org/example/dao/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/parent/Dao/target/classes/org/example/dao/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent/Service/src/main/java/org/example/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/parent/Service/src/main/java/org/example/Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent/Service/src/main/java/org/example/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/parent/Service/src/main/java/org/example/service/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent/Service/target/classes/org/example/Dao.class" beforeDir="false" afterPath="$PROJECT_DIR$/parent/Service/target/classes/org/example/Dao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent/Service/target/classes/org/example/service/Service$ServiceDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/parent/Service/target/classes/org/example/service/Service$ServiceDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent/Service/target/classes/org/example/service/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/parent/Service/target/classes/org/example/service/Service.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +60,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -84,30 +76,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "18",
-    "last_opened_file_path": "/home/christian/Desktop/Luci Space/Luci-product-team/Multi-Project/Application/pom.xml",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "spring.configuration.checksum": "e498749f3c42246d50b15c81c101d988"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/christian/Desktop/Luci Space/Luci-product-team/Multi-Project/Application/pom.xml&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;7b35a7f60b85cd9371a3440b2788dac1&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Multi-Project" />
@@ -144,7 +136,9 @@
       <workItem from="1653272429920" duration="73000" />
       <workItem from="1653272507882" duration="80000" />
       <workItem from="1653272591614" duration="2217000" />
-      <workItem from="1653277150041" duration="23333000" />
+      <workItem from="1653277150041" duration="33430000" />
+      <workItem from="1653315010585" duration="606000" />
+      <workItem from="1653321026391" duration="1376000" />
     </task>
     <servers />
   </component>

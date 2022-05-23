@@ -2,13 +2,9 @@ package org.example.service;
 
 import org.example.Dao;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Service {
-
-
-
     //    ServiceDTO
     public static class ServiceDTO{
         private int id;
@@ -71,5 +67,17 @@ public class Service {
 
     public List<ServiceDTO> getAllUser(){
         return dao.listAllUser();
+    }
+
+    public void update(ServiceDTO serviceDTO, int id){
+        dao.update(serviceDTO, id);
+    }
+
+    public void save(ServiceDTO serviceDTO){
+        dao.save(serviceDTO);
+    }
+
+    public void delete(int id){
+        dao.delete(id);
     }
 }

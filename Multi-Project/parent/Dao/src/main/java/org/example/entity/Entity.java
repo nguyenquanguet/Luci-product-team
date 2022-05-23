@@ -1,10 +1,12 @@
-package org.example;
+package org.example.entity;
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 @javax.persistence.Entity
+@Data
 @Table(name = "user")
 public class Entity implements Serializable {
 
@@ -18,7 +20,6 @@ public class Entity implements Serializable {
     @Column
     private String email;
 
-    @Autowired
     public Entity(){
 
     }
