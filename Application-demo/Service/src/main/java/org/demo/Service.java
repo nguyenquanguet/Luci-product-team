@@ -1,10 +1,21 @@
 package org.demo;
 
+import java.util.Collection;
+
 public class Service {
 
-    public static class UnvalidatedCreateUserContext {
+    public class UnvalidatedCreateUserContext {
         private String name;
         private int age;
+        private String email;
+
+        public String getEmail() {
+            return email;
+        }
+
+        public void setEmail(String email) {
+            this.email = email;
+        }
 
         public String getName() {
             return name;
@@ -23,9 +34,19 @@ public class Service {
         }
     }
 
-    public static class ValidatedCreateUserContext {
+    public class ValidatedCreateUserContext {
+        private int id;
         private String name;
         private int age;
+        private String email;
+
+        public String getEmail() {
+            return email;
+        }
+
+        public void setEmail(String email) {
+            this.email = email;
+        }
 
         public String getName() {
             return name;
@@ -42,40 +63,39 @@ public class Service {
         public void setAge(int age) {
             this.age = age;
         }
-    }
 
-
-    private Dao userDao;
-
-
-    public Service(Dao userDao) {
-        this.userDao = userDao;
-    }
-
-    public static class CreateUserResult{
-        private String id;
-
-        public CreateUserResult(String id) {
-            this.id = id;
+        public void setId(int index) {
         }
 
-        public String getId() {
+        public int getId() {
             return id;
         }
     }
 
-    public CreateUserResult save(UnvalidatedCreateUserContext user) {
-        if(user == null){
-            return null;
-        }
-        try {
-            return new CreateUserResult(userDao.save(validate(user)));
-        }catch (Exception e){
-            return new CreateUserResult(null);
-        }
+    private Dao userDao;
+
+    private ValidatedCreateUserContext todo = new ValidatedCreateUserContext();
+
+    public void save(ValidatedCreateUserContext context) {
+        Dao.save(todo);
+        todo = new ValidatedCreateUserContext();
     }
 
-    private ValidatedCreateUserContext validate(UnvalidatedCreateUserContext context) {
-        return new ValidatedCreateUserContext();
+    public Collection<ValidatedCreateUserContext> getAllTodo() {
+        return Dao.getAll();
     }
+
+    public int saveTodo(ValidatedCreateUserContext todo) {
+        validate(todo);
+        return Dao.save(todo);
+    }
+
+    private void validate(ValidatedCreateUserContext todo) {
+        // Details omitted
+    }
+
+    public ValidatedCreateUserContext getTodo() {
+        return todo;
+    }
+
 }

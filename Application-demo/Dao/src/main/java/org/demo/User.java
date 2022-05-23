@@ -16,15 +16,26 @@ public class User implements Serializable {
     private String name;
     @Column
     private int age;
+    @Column
+    private String email;
 
     public User(){
 
     }
 
-    public User(int id, String name, int age){
+    public User(int id, String name, int age, String email){
         this.id = id;
         this.name = name;
         this.age = age;
+        this.email = email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     public void setId(int id) {

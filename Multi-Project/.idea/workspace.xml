@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1a030922-9c79-4f9c-ab86-2b0ee3de5dd4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/Luci-product-team.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Application-demo/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Application-demo/Dao/src/main/java/org/demo/UserIml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent/Application/src/main/java/com/example/application/ServiceConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent/Controller/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent/Controller/src/main/java/org/example/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent/Dao/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent/Dao/src/main/java/org/example/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent/Dao/src/main/java/org/example/dao/DaoImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent/Service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent/Service/src/main/java/org/example/Dao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent/Service/src/main/java/org/example/service/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application-demo/Application/src/main/java/com/demo/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Application-demo/Application/src/main/java/com/demo/application/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application-demo/Application/src/main/java/com/demo/application/ServiceConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Application-demo/Application/src/main/java/com/demo/application/ServiceConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application-demo/Application/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Application-demo/Application/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application-demo/Controller/src/main/java/org/demo/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Application-demo/Controller/src/main/java/org/demo/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application-demo/Controller/target/classes/org/demo/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application-demo/Dao/src/main/java/org/demo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Application-demo/Dao/src/main/java/org/demo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application-demo/Dao/src/main/java/org/demo/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application-demo/Dao/src/main/java/org/demo/UserDaos.java" beforeDir="false" afterPath="$PROJECT_DIR$/parent/Dao/src/main/java/org/example/dao/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application-demo/Dao/target/classes/org/demo/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application-demo/Dao/target/classes/org/demo/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application-demo/Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Application-demo/Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application-demo/Service/src/main/java/org/demo/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Application-demo/Service/src/main/java/org/demo/Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application-demo/Service/src/main/java/org/demo/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Application-demo/Service/src/main/java/org/demo/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application-demo/Service/target/classes/org/demo/Dao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Application-demo/Service/target/classes/org/demo/Dao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application-demo/Service/target/classes/org/demo/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../file check commit.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/parent/Service/src/main/java/org/example/service/Service.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="29QQNqTvlJqcOD4uKxVGCgqlXmc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "18",
+    "last_opened_file_path": "/home/christian/Desktop/Luci Space/Luci-product-team/Multi-Project/Application/pom.xml",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "spring.configuration.checksum": "e498749f3c42246d50b15c81c101d988"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Multi-Project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Multi-Project" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Application" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.application.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1a030922-9c79-4f9c-ab86-2b0ee3de5dd4" name="Changes" comment="" />
+      <created>1653042791921</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653042791921</updated>
+      <workItem from="1653042793245" duration="1271000" />
+      <workItem from="1653271923449" duration="301000" />
+      <workItem from="1653272315584" duration="83000" />
+      <workItem from="1653272429920" duration="73000" />
+      <workItem from="1653272507882" duration="80000" />
+      <workItem from="1653272591614" duration="2217000" />
+      <workItem from="1653277150041" duration="23333000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

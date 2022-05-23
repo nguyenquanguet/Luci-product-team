@@ -12,9 +12,4 @@ public class ServiceConfiguration {
         return new Service();
     }
 
-    @Bean
-    User user(){
-        return new User();
-    }
-
 }

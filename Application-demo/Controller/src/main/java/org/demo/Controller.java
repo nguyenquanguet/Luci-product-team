@@ -9,20 +9,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/user")
 public class Controller {
 
-    @Autowired
-    private Service userService;
-    @PostMapping("/add")
-    public void addUser(@RequestBody Dao user){
-        userService.save(user);
+    private final Service userService;
+
+    public Controller(Service userService) {
+        this.userService = userService;
     }
 
-//    @Autowired
-//    public Service updateUser(User user){
-//        return userService.update(user);
-//    }
-//
-//    public Service deleteUser(User user){
-//        return userService.delete(user);
-//    }
+    @PostMapping("/user/add")
+    public void saveD(@RequestBody Service.ValidatedCreateUserContext context){
+        userService.save(context);
+    }
 
 }
