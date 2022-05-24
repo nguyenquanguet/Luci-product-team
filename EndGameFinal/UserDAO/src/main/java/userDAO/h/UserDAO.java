@@ -15,7 +15,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Component
 @Table(name = "user_dao")
-public class UserDAO implements Serializable {
+public class UserDAO  {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
