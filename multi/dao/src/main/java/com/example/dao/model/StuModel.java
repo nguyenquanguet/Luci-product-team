@@ -1,5 +1,6 @@
-package com.example.dao;
+package com.example.dao.model;
 
+import lombok.Data;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
@@ -7,6 +8,7 @@ import javax.persistence.*;
 @Table(name = "student")
 @Entity
 @Component
+@Data
 public class StuModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

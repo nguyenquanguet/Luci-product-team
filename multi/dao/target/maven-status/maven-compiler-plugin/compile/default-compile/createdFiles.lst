@@ -1,4 +1,3 @@
-com\example\dao\StuModel.class
-com\example\dao\MainDao.class
-com\example\dao\StuDao.class
-com\example\dao\StuRepostory.class
+com\example\dao\Repo\StuRepostory.class
+com\example\dao\Model\StuModel.class
+com\example\dao\Dao\StuDao.class
