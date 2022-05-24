@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="JpbDataSourceConfig">
-    <data-sources>
-      <data-source id="e76e49b9-cb3c-47b3-9215-51e73a9cdfad" name="multi" url="jdbc:mysql://localhost:3306/multi" driverClass="com.mysql.jdbc.Driver" />
-    </data-sources>
-  </component>
-</project>
