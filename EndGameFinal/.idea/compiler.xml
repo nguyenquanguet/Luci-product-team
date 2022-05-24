@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="App" />
+        <module name="UserController" />
+        <module name="UserDAO" />
+        <module name="UserService" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="App" target="1.8" />
+      <module name="Application" target="8" />
+      <module name="ApplicationEG" target="1.8" />
+      <module name="ControllerEG" target="1.8" />
+      <module name="DAOEG" target="1.8" />
+      <module name="EndGameFinal" target="1.8" />
+      <module name="ServiceEG" target="1.8" />
+      <module name="UserController" target="8" />
+      <module name="UserDAO" target="8" />
+      <module name="UserService" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="App" options="-parameters" />
+      <module name="Application" options="-parameters" />
+      <module name="ApplicationEG" options="-parameters" />
+      <module name="ControllerEG" options="-parameters" />
+      <module name="DAOEG" options="-parameters" />
+      <module name="EndGameFinal" options="-parameters" />
+      <module name="ServiceEG" options="-parameters" />
+      <module name="UserController" options="-parameters" />
+      <module name="UserDAO" options="-parameters" />
+      <module name="UserService" options="-parameters" />
+    </option>
+  </component>
+</project>

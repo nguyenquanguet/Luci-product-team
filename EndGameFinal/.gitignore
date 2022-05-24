@@ -31,13 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-
-
-EndGameFinal.iml
-.idea/
-taget/
-mvnw
-mvnw.cmd
-.mvn/
-src/
-HELP.md
