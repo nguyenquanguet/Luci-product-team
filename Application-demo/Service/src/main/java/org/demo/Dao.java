@@ -1,12 +1,12 @@
 package org.demo;
 
-import java.util.Collection;
-import java.util.Optional;
+import org.demo.service.Service;
+import java.util.List;
 
-public interface Dao<T>{
-    Optional<T> get(int id);
-    Collection<T> getAll();
-    int save(T t);
-    void update(T t);
-    void delete(T t);
+public interface Dao {
+    List<Service.ServiceDTO> listAllUser();
+    void save(Service.ServiceDTO serviceDTO);
+    void update(Service.ServiceDTO serviceDTO, int id);
+    void delete(int id);
+
 }
