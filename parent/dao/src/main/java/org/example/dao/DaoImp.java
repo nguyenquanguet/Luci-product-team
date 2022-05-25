@@ -10,42 +10,54 @@ import java.util.*;
 @Component
 public class DaoImp implements Dao {
 
-    private UserRepository userRepository;
-    private List<Entity> userEntity = new ArrayList<Entity>();
+    private final UserRepository userRepository;
 
     @Autowired
     public DaoImp(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
-
-    @Override
-        public List<Service.ServiceDTO> listAllUser() {
-            List<Service.ServiceDTO> serviceDTO = new ArrayList<Service.ServiceDTO>();
-            for (Entity entity : userRepository.findAll()) {
-                serviceDTO.add(toServiceEntity(entity));
-            }
-            return serviceDTO;
+    /**
+    public void checkDB(){
+        if (userRepository != null) {
+            System.out.println("Connection!");
         }
+        System.out.println("Failed Connection!");
+    }
+    */
 
     @Override
-    public void save(Service.ServiceDTO serviceDTO) {
+    public List<Service.ServiceDTO> listAllUser() {
+        List<Service.ServiceDTO> serviceDTO = new ArrayList<>();
+        for (Entity entity : userRepository.findAll()) {
+            serviceDTO.add(toServiceEntity(entity));
+        }
+        return serviceDTO;
+    }
+
+    @Override
+    public boolean save(Service.ServiceDTO serviceDTO) {
         userRepository.save(toEntity((serviceDTO)));
+        return true;
     }
 
     @Override
-    public void update(Service.ServiceDTO serviceDTO, int id) {
-        if(userRepository.findById(id).toString() == null);
-            System.out.println("Null");
+    public boolean update(Service.ServiceDTO serviceDTO, int id) {
+        if(!userRepository.existsById(id)) {
+            return false;
+        }
         userRepository.save(toEntity(serviceDTO));
+        return true;
     }
 
     @Override
-    public void delete(int id) {
-        if(userRepository.findById(id).toString() == null);
-            System.out.println("Null");
+    public boolean delete(int id) {
+        if(!userRepository.existsById(id))
+            return false;
         userRepository.deleteById(id);
+        return true;
     }
 
+//    Chuyen doi serviceDTO sang Entity
     public static Service.ServiceDTO toServiceEntity(Entity entity){
         if (entity == null) {
             return null;
@@ -58,6 +70,7 @@ public class DaoImp implements Dao {
         return serviceEntity;
     }
 
+//    Chuyen doi tu Entity sang serviceDTO
     public static Entity toEntity(Service.ServiceDTO serviceDTO){
         if(serviceDTO == null){
             return null;

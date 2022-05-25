@@ -10,10 +10,9 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/users")
 public class Controller {
 
-    @Autowired
     private Service service;
 
     @Autowired
@@ -27,18 +26,27 @@ public class Controller {
     }
 
     @RequestMapping(value = "/", method = RequestMethod.POST)
-    public void save(@Valid @RequestBody Service.ServiceDTO serviceDTO){
+    public String save(@Valid @RequestBody Service.ServiceDTO serviceDTO){
         service.save(serviceDTO);
+        if(service.save(serviceDTO))
+            return "Save Success";
+        return "Save UnSuccess";
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
-    public void update(@PathVariable(value = "id") int userID,  @Valid @RequestBody Service.ServiceDTO serviceDTO){
+    public String update(@PathVariable(value = "id") int userID,  @Valid @RequestBody Service.ServiceDTO serviceDTO){
         service.update(serviceDTO, userID);
+        if(service.update(serviceDTO,userID))
+            return "Update Success";
+        return "Update UnSuccess. Because id not found in entity";
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    public void delete(@PathVariable(value = "id") int userID){
+    public String delete(@PathVariable(value = "id") int userID){
         service.delete(userID);
+        if(service.delete(userID))
+            return "Delete Success" + userID;
+        return "Delete UnSuccess: " + userID;
     }
 
 }

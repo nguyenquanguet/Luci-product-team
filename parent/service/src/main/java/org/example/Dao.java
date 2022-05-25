@@ -5,8 +5,8 @@ import java.util.List;
 
 public interface Dao {
     List<Service.ServiceDTO> listAllUser();
-    void save(Service.ServiceDTO serviceDTO);
-    void update(Service.ServiceDTO serviceDTO, int id);
-    void delete(int id);
+    boolean save(Service.ServiceDTO serviceDTO);
+    boolean update(Service.ServiceDTO serviceDTO, int id);
+    boolean delete(int id);
 
 }

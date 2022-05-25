@@ -12,15 +12,16 @@ public class Service {
         private int age;
         private String email;
 
+
+        public ServiceDTO() {
+
+        }
+
         public ServiceDTO(int id, String name, int age, String email) {
             this.id = id;
             this.name = name;
             this.age = age;
             this.email = email;
-        }
-
-        public ServiceDTO() {
-
         }
 
         public int getId() {
@@ -69,15 +70,21 @@ public class Service {
         return dao.listAllUser();
     }
 
-    public void update(ServiceDTO serviceDTO, int id){
-        dao.update(serviceDTO, id);
+    public boolean update(ServiceDTO serviceDTO, int id){
+        return dao.update(serviceDTO, id);
     }
 
-    public void save(ServiceDTO serviceDTO){
+    public boolean save(ServiceDTO serviceDTO){
+        if (serviceDTO == null)
+            return false;
         dao.save(serviceDTO);
+        return true;
     }
 
-    public void delete(int id){
-        dao.delete(id);
+    public boolean delete(int id){
+        if(id == 0){
+            return false;
+        }
+        return dao.delete(id);
     }
 }
