@@ -4,3 +4,8 @@ target/
 App/.mvn/
 mvnw
 mvnW.cmd
+App/App.iml
+EndGameFinal.iml
+UserController/UserController.iml
+UserDAO/UserDAO.iml
+UserService/UserService.iml
