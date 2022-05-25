@@ -46,21 +46,21 @@
             <groupId>org.demo</groupId>
             <artifactId>Controller</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
+
         </dependency>
 
         <dependency>
             <groupId>org.demo</groupId>
             <artifactId>Service</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
+
         </dependency>
 
         <dependency>
             <groupId>org.demo</groupId>
             <artifactId>Dao</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
+
         </dependency>
         <dependency>
             <groupId>org.springframework.data</groupId>

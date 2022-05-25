@@ -13,8 +13,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @Configuration
 @ComponentScan({"org.demo.dao", "org.demo.controller"})
 @EnableJpaRepositories("org.demo.dao")
-@EntityScan("org.demo.entity.Entity")
+@EntityScan("org.demo.dao")
 public class Configured {
+
     @Bean
     public Service service(Dao dao) {
         return new Service(dao);
