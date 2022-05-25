@@ -5,9 +5,9 @@ import java.util.List;
 public interface IUserDAO {
     List<ServiceDTO> getAll();
 
-    String create(ServiceDTO serviceDTO);
+    ServiceDTO create(ServiceDTO serviceDTO);
 
-    String update(Long id, ServiceDTO serviceDTO);
+    ServiceDTO update(Long id, ServiceDTO serviceDTO);
 
     boolean deleteUser(Long id);
 }

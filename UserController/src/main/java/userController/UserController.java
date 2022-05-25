@@ -30,7 +30,7 @@ public class UserController {
     }
 
     @PutMapping("/update/{id}")
-    public String update(@PathVariable Long id, @Valid @RequestBody ServiceDTO serviceDTO) {
+    public ServiceDTO update(@PathVariable Long id, @Valid @RequestBody ServiceDTO serviceDTO) {
         return service.updateUser(id, serviceDTO);
     }
 

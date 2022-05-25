@@ -22,29 +22,29 @@ public class IUserDAOImpl implements IUserDAO {
 
     @Override
     public List<ServiceDTO> getAll() {
-
         List<ServiceDTO> serviceDTO = new ArrayList<ServiceDTO>();
         for (UserDAO userDAO : userRepository.findAll()) {
             serviceDTO.add(converstDAOToDTO(userDAO));
         }
         return serviceDTO;
-
     }
 
     @Override
-    public String create(ServiceDTO serviceDTO) {
-        userRepository.save(converstDTOToDAO(serviceDTO));
-        return "something";
+    public ServiceDTO create(ServiceDTO serviceDTO) {
+        UserDAO userDAO = userRepository.save(converstDTOToDAO(serviceDTO));
+        ServiceDTO sDTO = converstDAOToDTO(userDAO);
+        return sDTO;
     }
 
     @Override
-    public String update(Long id, ServiceDTO serviceDTO) {
+    public ServiceDTO update(Long id, ServiceDTO serviceDTO) {
         if (serviceDTO != null) {
             UserDAO userDAO = userRepository.getById(id);
             if (userDAO != null) {
                 userDAO.setName(serviceDTO.getName());
-                userRepository.save(converstDTOToDAO(serviceDTO));
-                return "ok";
+                UserDAO uDAO = userRepository.save(converstDTOToDAO(serviceDTO));
+                ServiceDTO sDTO = converstDAOToDTO(uDAO);
+                return sDTO;
             }
 
         }

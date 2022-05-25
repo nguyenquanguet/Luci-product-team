@@ -17,11 +17,11 @@ public class Service {
         return userDAO.getAll();
     }
 
-    public String createUser(ServiceDTO serviceDTO) {
+    public ServiceDTO createUser(ServiceDTO serviceDTO) {
         return userDAO.create(serviceDTO);
     }
 
-    public String updateUser(Long id, ServiceDTO serviceDTO) {
+    public ServiceDTO updateUser(Long id, ServiceDTO serviceDTO) {
         return userDAO.update(id, serviceDTO);
     }
 
