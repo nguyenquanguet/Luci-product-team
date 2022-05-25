@@ -1,4 +1,6 @@
 .idea/
 target/
+.mvn/
+App/.mvn/
 mvnw
 mvnW.cmd
