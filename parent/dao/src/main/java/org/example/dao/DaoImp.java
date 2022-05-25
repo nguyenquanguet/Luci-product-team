@@ -13,6 +13,7 @@ public class DaoImp implements Dao {
     private UserRepository userRepository;
     private List<Entity> userEntity = new ArrayList<Entity>();
 
+    //Config
     @Autowired
     public DaoImp(UserRepository userRepository) {
         this.userRepository = userRepository;
