@@ -1,8 +1,0 @@
-/.idea
-target/
-application/target
-controller/target
-dao/target
-service/target
-.gitignore
-mvnw
